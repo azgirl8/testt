@@ -1,0 +1,374 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Poppins',sans-serif;
+
+}
+
+body{
+	background:#6c9696;
+
+}
+
+
+nav{
+	background: #061430;
+}
+
+nav:after{
+	content:'';
+	clear:both;
+	display:table;
+}
+
+nav .logo{
+	float:left;
+	color:white;
+	font-size:27px;
+	font-weight:660;
+	line-height: 70px;
+	padding-left:60px;
+
+}
+
+nav ul{
+	float:right;
+	list-style: none;
+	margin-right: 40px;
+	position:relative;
+}
+
+nav ul li{
+	float:left;
+	display:inline-block;
+	background:#061430;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color:white;
+	text-decoration: none;
+	line-height:70px;
+	font-size:18px;
+	padding: 8px 15px;
+}
+
+nav ul li a:hover{
+	color:cyan;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #44ffff, 
+                0 0 5px #66ffff;
+
+}
+
+nav ul ul li a:hover{
+	color:cyan;
+	box-shadow: none;
+}
+
+nav ul ul{
+	position:absolute;
+	top:90px;
+	opacity:0;
+	border-top: 3px solid cyan;
+	visibility: hidden;
+	transition: top .3s;
+}
+
+nav ul ul ul{
+	border-top: none;
+}
+
+nav ul li:hover > ul{
+	top: 70px;
+	opacity:1;
+	visibility:visible;
+}
+
+nav ul ul li{
+	position:relative;
+	margin:0px;
+	width:150px;
+	float: none;
+	display:list-item;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul ul li a{
+	line-height: 50px;
+}
+nav ul ul ul li{
+	position:relative;
+	top:-70px;
+	left:150px;
+}
+.fa-plus{
+	margin-left: 40px;
+	font-size: 15px;
+}
+
+.show,.icon,input{
+	display: none;
+}
+
+@media all and (max-width: 968px){
+	nav ul{
+		margin-right: 0px;
+		float:left;
+	}
+
+	nav.logo{
+		padding-left: 30px;
+		width: 100%;
+	}
+	nav ul li, nav ul ul li{
+		display:block;
+		width:100%;
+	}
+	nav ul ul{
+		top:70px;
+		position:static;
+		border-top: none;
+		float:none;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+	nav ul ul ul li{
+		position: static;
+	}
+	nav ul ul li{
+		border-bottom: 0px;
+	}
+	nav ul ul a{
+		padding-left: 40px;
+	}
+	nav ul ul a{
+		padding-left: 80px;
+	}
+	.show{
+		display:block;
+		color:white;
+		font-size:18px;
+		padding:0 20px;
+		line-height: 70px;
+		cursor:pointer;
+	}
+	.show:hover{
+		color: cyan;
+	}
+	.icon{
+		display: block;
+		color: white;
+		position: absolute;
+		right: 40px;
+		line-height: 70px;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	nav ul li a:hover{
+		box-shadow: none;
+	}
+
+	.show + a, ul{
+		display: none;
+	}
+	[id^=btn]:checked + ul{
+		display: block;
+	}
+
+
+}
+
+
+
+
+.img-banner{
+	display: none;
+}
+
+.wrapper{
+	width: 100%;
+}
+
+.img-info{
+	width:100%;
+}
+
+.slide-1,.slide-2,.slide-3,.slide-4
+{
+	display: block;
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+.slide-1
+{
+	animation: fadea 10s infinite;
+}
+.slide-2
+{
+	animation: fadeb 10s infinite;
+}.slide-3
+{
+	animation: fadec 10s infinite;
+}.slide-4
+{
+	animation: faded 10s infinite;
+}
+
+@media only screen and (min-width: 320px){
+
+
+	.img-banner{
+		display:block;
+		width:100%;
+		padding-bottom: 30px;
+	}
+
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.slide-1,.slide-2,.slide-3,.slide-4
+{
+	display: block;
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+
+.slide-1
+{
+	animation: fadea 10s infinite;
+}
+.slide-2
+{
+	animation: fadeb 10s infinite;
+}
+.slide-3
+{
+	animation: fadec 10s infinite;
+}
+.slide-4
+{
+	animation: faded 10s infinite;
+}
+
+@media only screen and (min-width: 768px){
+
+	.img-banner{
+		display:block;
+		width:100%;
+		padding-bottom: 30px;
+	}
+
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.slide-1,.slide-2,.slide-3,.slide-4
+{
+	display: block;
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+
+
+.slide-1
+{
+	animation: fadea 10s infinite;
+}
+.slide-2
+{
+	animation: fadeb 10s infinite;
+}.slide-3
+{
+	animation: fadec 10s infinite;
+}.slide-4
+{
+	animation: faded 10s infinite;
+}
+
+@media only screen and (min-width: 1000px){
+
+
+
+
+	.img-banner{
+		display:block;
+		width:100%;
+		padding-bottom: 30px;
+	}
+
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.slide-1,.slide-2,.slide-3,.slide-4
+{
+	display: block;
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+
+.slide-1
+{
+	animation: fadea 10s infinite;
+}
+.slide-2
+{
+	animation: fadeb 10s infinite;
+}.slide-3
+{
+	animation: fadec 10s infinite;
+}.slide-4
+{
+	animation: faded 10s infinite;
+}
+
+}
+
+@keyframes fadea
+{
+	0%{opacity:1;}
+	25%{opacity: 0;}
+	50%{opacity:0;}
+	75%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes fadeb
+{
+	0%{opacity:0;}
+	25%{opacity: 1;}
+	50%{opacity:0;}
+	75%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes fadec
+{
+	0%{opacity:0;}
+	25%{opacity: 0;}
+	50%{opacity:1;}
+	75%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes faded
+{
+	0%{opacity:0;}
+	25%{opacity: 0;}
+	50%{opacity:0;}
+	75%{opacity: 1;}
+	100%{opacity: 0;}
+}
+

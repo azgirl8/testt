@@ -1,0 +1,82 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family:'Poppins', sans-serif;
+}
+
+section{
+	width:100%;
+	height:100vh;
+	background:#6c9696;;
+}
+
+section .leftbox{
+	width: 50%;
+	height:100%;
+	float: left;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+section .leftbox .content{
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	padding: 40px;
+	transition: .5s;
+
+}
+
+section .leftbox .content:hover{
+	background:#395e99;
+
+}
+
+section .leftbox .content h1{
+	margin:0;
+	padding:0;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+section .leftbox .content p{
+	margin:10px 0 0;
+	padding:0;
+}
+
+section .events{
+	position:relative;
+	width:50%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	float: right;
+	box-sizing: border-box;
+}
+
+section .events ul{
+	position:absolute;
+	top: 50%;
+	transform: translateY(-150%);
+	margin:0;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+section .events ul li{
+	list-style: none;
+	background: #fff;
+	box-sizing: border-box;
+	height: 220px;
+	/*margin: 15px 0;*/
+}
+
+section .events ul li .time{
+	
+	padding: 60px;
+	background: #262626;
+	box-sizing: border-box;
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
